@@ -1,0 +1,154 @@
+body {
+	background-image: url("../img/background.png");
+	font-size: 8pt;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.bannerbackground {
+	background-image: url("../img/bannerbackground.png");
+	background-repeat: repeat-x;
+	height: 50px;
+}
+
+.banner {
+	text-align: center;
+}
+
+.header {
+	font-size: 24pt;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.header h1 {
+	margin: 20px 0;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 4px solid #606060;
+}
+
+.left-block {
+	width: 550px;
+	float: left;
+}
+
+.nav {
+	background-image: url("../img/rottenbackground.png");
+	background-repeat: repeat-x;
+	font-size: 8pt;
+	height: 83px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav img {
+	vertical-align: -10px;
+}
+
+.nav span#red {
+	font-size: 48pt;
+	color: #E60000;
+	font-weight: 700;
+}
+
+.content-left {
+	width: 47%;
+	margin: 2% 1% 2% 2%;
+	float: left;
+}
+
+.p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8 {
+	overflow: hidden;
+}
+
+.comment {
+	font-size: 8pt;
+	font-weight: 900;
+	background-color: #E1D697;
+	border: 2px solid grey;
+	padding: 6px;
+	overflow: hidden;
+}
+
+.comment p {
+	margin: 0;
+}
+
+.comment  p  img {
+	float: left;
+	padding-right: 5px;
+}
+
+.username {
+	float: left;
+	overflow: hidden;
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+.username p img {
+	float: left;
+	padding-right: 5px;
+}
+
+.username p span {
+	font-style: italic;
+}
+
+.content-right {
+	width: 47%;
+	margin: 2% 2% 2% 1%;
+	float: left;
+}
+
+.right-block {
+	width: 250px;
+	float: left;
+	background-color: #A2B964;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.desc {
+	display: inline-block;
+	margin: 0;
+	padding: 10px;
+}
+
+.desc dl {
+	margin: 0;
+}
+
+.desc dt {
+	font-weight: 900;
+}
+
+.desc dd {
+	margin-bottom: 1em;
+}
+
+
+.footer {
+	display: inline-block;
+	width: 100%;
+	background-color: #A2B964;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.linked {
+	display: inline-block;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}

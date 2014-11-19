@@ -1,0 +1,57 @@
+body.bg {
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%, 100%;
+	background-attachment: fixed;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	width: 700px;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 16px;
+}
+
+h1.let {
+	text-align: center;
+	text-decoration: underline;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #404040;
+	font-size: 35px;
+	padding-top: 30px;
+}
+
+div.set1 {
+	width: 270px;
+	margin: 0 auto;
+}
+
+img.set {
+	width: 300px;
+	height: 300px;
+}
+
+p.set_p {
+	text-indent: 32px;
+	color: #404040;
+	font-size: 20px;
+	text-align: justify;
+}
+
+p.set_p_c {
+	color: #303030;
+	font-size: 20px;
+	cursor: pointer;
+	border-style: outset;
+	border-color: #CC0099;
+	width: 200px;
+	margin: 0 auto;
+	background-color: #CC0099;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
