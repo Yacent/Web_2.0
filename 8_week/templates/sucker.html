@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Buy Your Way to a Better Education!</title>
+		<link href="{{ static_url('buyagrade.css') }}" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div>
+			<h1>Thanks, sucker!</h1>
+
+			<p>Your information has been recorded.</p>
+
+			<dl>
+				<dt>Name</dt>
+				<dd>{{ username }}</dd>
+
+				<dt>Section</dt>
+				<dd>{{ section }}</dd>
+
+				<dt>Credit Card</dt>
+				<dd>{{ card_num }}({{ card_type }})</dd>
+			</dl>
+
+			<b>Here are all the suckers who have submitted here:</b>
+			<pre>
+				{% for i in range(len(list_data)) %}
+					{{ list_data[i] }}
+				{% end %}
+			</pre>
+		</div>
+
+		<div class="button_page">
+			<button><a href="/">Return to HomePage</a></button>
+		</div>
+		
+	</body>
+</html>  
