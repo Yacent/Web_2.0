@@ -1,0 +1,115 @@
+/*
+CSE 190 M, Spring 2009, Marty Stepp
+Homework 4: NerdLuv
+Stylesheet for HTML forms / basic PHP program
+You should modify this stylesheet as necessary to reproduce the expected page.
+*/
+
+/* provided styles */
+
+* {
+	font-size: 12pt;
+	font-family: "Verdana", "Geneva", sans-serif;
+}
+
+body {
+	background-color: white;
+	padding: 1em;
+}
+
+#bannerarea {
+	margin-bottom: 2em;
+}
+
+div {
+	margin-top: 0.5em;
+}
+
+.info {
+	padding-left: 160px;
+}
+
+#main {
+	overflow: hidden;
+	width: 32em;
+}
+
+.match {
+	margin-bottom: 3em;
+}
+
+.name {
+	background-color: #E0E0FF;
+	clear: left;
+}
+
+.name img {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 3em;
+}
+
+#seeking {
+	margin-top: 2em;
+}
+
+#w3c {
+	clear: both;
+}
+
+#w3c img {
+	border-width: 0px;
+}
+
+
+/* your additional styles go here */
+
+fieldset {
+	width: 30em;
+	background-color: #E0E0FF;
+	border: 2px outset grey;
+}
+
+legend {
+	border: 2px outset grey;
+	padding: 0.2em;
+	background-color: #FFFFFF;
+}
+
+.input-content {
+	width: 11em;
+	display: inline-block;
+}
+
+input[type="submit"] {
+	background-color: #FFAAAA;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+.back {
+	width: 20em;
+	margin: 0 auto;
+	border: 1px solid #808080;
+	background-color: #E0E0E0;
+	text-align: center;
+}
+
+.back a {
+	display: block;
+	width: 18em;
+	color: #660000;
+	text-decoration: none;
+}
+
+.back a:hover {
+	color: #C0F;
+}
+
+button {
+	background-color: #FFAAAA;
+	font-weight: bold;
+	font-size: 1.2em;
+}

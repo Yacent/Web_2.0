@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<!-- CSE 190 M Homework 4 (NerdLuv) -->
+	<head>
+		<title>NerdLuv</title>
+		<meta charset="utf-8">
+		<link href="{{ static_url('fresh.gif')}}" type="image/gif" rel="shortcut icon">
+		<link href="{{ static_url('nerdluv.css')}}" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="bannerarea">
+				<img src="{{ static_url('nerdluv.png') }}" alt="banner logo" /> <br />
+				where meek geeks meet
+			</div>
+
+		<div>
+			<form action="/query" method="get" id="query-user">
+				<fieldset>
+					<legend>View Your Matches</legend>
+
+					<div>
+						<div class="input-content"><strong>Name:</strong></div>
+						<input type="text" name="old_name" size=16>
+						<input type="submit" value="View My Matches">
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+
+		<div>
+			<form action="/signin" id="signin" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>New User Signup</legend>
+
+					<div>
+						<div class="input-content">
+							<strong>Name:</strong>
+						</div>
+						<label><input type="text" name="name" size=16></label>
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Gender:</strong></div>
+						<input type="radio" value="M" name="gender" checked="checked">Male
+						<input type="radio" value="F" name="gender">Female
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Age:</strong></div>
+						<label><input type="text" name="age" size=5 maxlength=2></label>
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Personality type:</strong></div>
+						<input type="text" name="ptype" size=5 maxlength=4>
+						(<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Favorite OS:</strong></div>
+						<select name="system">
+							<option value="Windows" selected="selected">Windows</option>
+							<option value="Mac OS X">Mac OS X</option>
+							<option value="Linux">Linux</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Seeking:</strong></div>
+						<input type="checkbox" name="sex" value="M" checked="checked">Male
+						<input type="checkbox" name="sex" value="F">Femal
+					</div>
+
+					<div>
+						<div class="input-content"><strong>Between ages:</strong></div>
+						<input type="text" name="low_age" size=5 maxlength=2> and 
+						<input type="text" name="high_age" size=5 maxlength=2>
+					</div>
+
+					<div>
+						<strong>Photo:</strong>
+						<input type="file" name="image">
+					</div>
+
+					<div>
+						<input type="submit" value="Sign Up">
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+			
+
+		<div id="w3c">
+			<a href="http://validator.w3.org/check/referer">
+				<img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS" /></a>
+		</div>
+	</body>
+</html>
+
+	
