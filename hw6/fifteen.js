@@ -1,4 +1,4 @@
-//增加了更换图片、结束游戏以图片提醒、时间、步数 三种额外功能
+//增加了更换图片、结束游戏以图片提醒、时间、步数 和动画四种额外功能
 
 window.onload = function() {
     var overall = document.getElementById("overall");
@@ -86,6 +86,8 @@ window.onload = function() {
     	blank.style.left = this.style.left;
     	this.style.top = tmp_top;
     	this.style.left = tmp_left;
+        //加入移动动画，延时
+        this.style.transition = "all 0.6s";
         //每一次移动都要判断其下一次可不可以移动了
     	highLightMove();
         happyEnd();
@@ -186,7 +188,7 @@ window.onload = function() {
         whole_img.style.height = "150px";
         whole_img.style.backgroundSize = "100% 100%";
         overall.appendChild(whole_img);
-    }
+    };
 
     //计时
     function timedCount() {
@@ -206,12 +208,12 @@ window.onload = function() {
     function stepCount() {
         step.innerHTML = "steps: " + stepC;
         stepC += 1;
-    }
+    };
 
     function ResetSetCount() {
         step.innerHTML = "steps";
         stepC = 0;
-    }
+    };
 
 
     add_blank();
